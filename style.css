@@ -121,3 +121,27 @@ details[open] summary {
 .faq-content {
   padding: 1rem;
 }
+
+/* CSS-only Navbar Toggler */
+.navbar-toggler-checkbox {
+  display: none;
+}
+
+/* On small screens, Bootstrap hides .navbar-collapse. This rule shows it when the hidden checkbox is checked. */
+.navbar-toggler-checkbox:checked ~ .navbar-collapse {
+  display: block;
+}
+
+/* Style for expanded mobile navbar */
+@media (max-width: 991.98px) {
+  .navbar-toggler-checkbox:checked ~ .navbar-collapse {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  .navbar-collapse .navbar-nav {
+    align-items: center;
+  }
+}
