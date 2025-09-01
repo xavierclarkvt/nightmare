@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nightmare Vermont - Volunteer</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            style="font-size: 1.5rem"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#showtimes">Showtimes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#location">Location</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faq.html">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="volunteer.html">Volunteer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tickets.html">Buy Tickets</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container my-4 text-center">
+      <div class="card">
+        <div class="card-body text-start">
+          <h1 class="display-4 text-center">Volunteer With Us</h1>
+          <p class="lead text-center">
+            Nightmare Vermont is a massive production, and it's only possible with the help of our amazing volunteers.
+          </p>
+          <p>
+            Whether you want to be a monster, help with makeup, build sets, or manage the crowds, we have a role for you. No experience is necessary! Fill out the form below to express your interest, and our volunteer coordinator will be in touch.
+          </p>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="interest" class="form-label">What are you interested in?</label>
+              <select class="form-select" id="interest">
+                <option selected>Choose an area...</option>
+                <option value="acting">Acting / Performing</option>
+                <option value="makeup">Makeup & Costuming</option>
+                <option value="build">Set Construction & Decor</option>
+                <option value="tech">Technical Crew (Lights, Sound)</option>
+                <option value="security">Front-of-house & Security</option>
+                <option value="any">I'll help anywhere!</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Tell us about your skills or ask a question</label>
+              <textarea class="form-control" id="message" rows="4"></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-danger btn-lg">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
